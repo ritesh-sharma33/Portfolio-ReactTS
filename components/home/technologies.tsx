@@ -242,7 +242,7 @@ const TechnologyCard = ({ key, technology }: TechCardProps) => {
         <a href={technology.websiteUrl}>
           <TechIcon iconElement={technology.imageUrl} />
           <br />
-          <span className="techName" style={{ color: "white" }}>{technology.name}</span>
+          <span className="techName" style={{ color: "white" }}>{key}</span>
         </a>
       </div>
     </Col>

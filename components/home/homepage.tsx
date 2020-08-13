@@ -1,12 +1,28 @@
 import React from 'react';
 import Hero from "./Hero";
+import AOS from 'aos';
 
-const HomePage = () => {
-  return (
+class HomePage extends React.Component {
+
+  constructor(props, context) {
+    super(props, context);
+    AOS.init({
+      duration: 2000
+    });
+  }
+
+  componentWillReceiveProps (){ 
+    AOS.refresh(); 
+  } 
+
+  render() {
+    return (
     <div className="homePage">
       <Hero />
     </div>
   );
-};
+  }
+}
+
 
 export default HomePage;
