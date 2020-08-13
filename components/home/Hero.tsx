@@ -33,17 +33,16 @@ const helloText = {
 };
 
 const photoSection = {
-  marginTop: 40,
+  marginTop: 40
 };
 
 const Hero = () => {
   return (
     <div style={heroSection}>
-      <div>
+      <div className="hero-screen-full">
         <Container>
           <Row style={{ height: "100vh" }}>
-          <div>
-          </div>
+            <div />
             <Col data-aos="fade-right" lg={6} xs={12} sm={12}>
               <div className="photoSection">
                 <img
@@ -54,7 +53,13 @@ const Hero = () => {
               </div>
             </Col>
 
-            <Col data-aos="fade-left" lg={6} xs={12} sm={12} style={{ marginTop: 70 }}>
+            <Col
+              data-aos="fade-left"
+              lg={6}
+              xs={12}
+              sm={12}
+              style={{ marginTop: 70 }}
+            >
               <span style={helloText}>
                 Hello &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; नमस्ते
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Hola
@@ -89,27 +94,36 @@ const Hero = () => {
             </Col>
           </Row>
         </Container>
-      </div>
 
-      <Container>
-        <div id="technologiesSection">
-          <Row data-aos="slide-up" className="technologies">
+        <Container className="scroller">
+          <section id="technologiesSection">
+            <a href="#techSection">
+              <span />
+              <span />
+              <span />
+            </a>
+          </section>
+        </Container>
+      </div>
+      <section id="techSection">
+        <Container>
+          <Row data-aos="fade-left" className="technologies">
             <Technologies
               heading={"Programming Languages"}
               techType={"programming"}
             />
           </Row>
-          <Row data-aos="slide-up" className="technologies">
+          <Row data-aos="fade-left" className="technologies">
             <Technologies heading={"Web Frameworks"} techType={"framework"} />
           </Row>
-          <Row data-aos="slide-up" className="technologies">
+          <Row data-aos="fade-left" className="technologies">
             <Technologies
               heading={"Mobile App Development"}
               techType={"mobile"}
             />
           </Row>
-        </div>
-      </Container>
+        </Container>
+      </section>
     </div>
   );
 };
