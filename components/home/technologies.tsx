@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import "./home.css";
 
 class Technology {
   name: string;
@@ -77,7 +78,7 @@ const technologies = [
     "https://dart.dev/",
     (
       <img
-        style={svgStyle}
+        style={{ height: 55, width: 55, marginBottom: 5 }}
         src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
       />
     ),
@@ -87,7 +88,7 @@ const technologies = [
     "Python",
     "https://www.python.org/",
     (
-      <svg viewBox="0 0 128 128">
+      <svg style={svgStyle} viewBox="0 0 128 128">
         <path
           fill="#FFD845"
           d="M49.33 62h29.159c8.117 0 14.511-6.868 14.511-15.019v-27.798c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191-12.355 2.181-14.453 6.751-14.453 15.176v10.817h29v4h-40.224000000000004c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53 2.075 8.642 7.03 14.659 15.515 14.659h9.946v-13.048c0-9.637 8.428-17.952 18.33-17.952zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zM122.281 48.811c-2.098-8.448-6.103-14.811-14.599-14.811h-10.682v12.981c0 10.05-8.794 18.019-18.511 18.019h-29.159c-7.988 0-14.33 7.326-14.33 15.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0 7.349-2.129 14.487-6.411 14.487-14.834v-11.126h-29v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"
@@ -100,7 +101,9 @@ const technologies = [
     "TypeScript",
     "",
     (
-      <i style={height: "60px !important;" width: "60px !important;"} className="devicon-typescript-plain colored"></i>
+      <span style={{ fontSize: 40 }}>
+        <i className="devicon-typescript-plain colored" />
+      </span>
     ),
     "programming"
   ),
@@ -190,14 +193,26 @@ const technologies = [
   new Technology(
     "Spring",
     "https://spring.io/",
-    "https://user-images.githubusercontent.com/45563022/88325472-c97a6a00-cd42-11ea-89c8-6c078086fa77.png",
+    (
+      <img
+        src="https://user-images.githubusercontent.com/45563022/88325472-c97a6a00-cd42-11ea-89c8-6c078086fa77.png"
+        height="60"
+        width="60"
+      />
+    ),
     "framework"
   ),
 
   new Technology(
     "Flutter",
     "https://flutter.dev",
-    "https://user-images.githubusercontent.com/45563022/88324636-9b485a80-cd41-11ea-93d5-4479ce82cdee.png",
+    (
+      <img
+        src="https://user-images.githubusercontent.com/45563022/88324636-9b485a80-cd41-11ea-93d5-4479ce82cdee.png"
+        height="60"
+        width="60"
+      />
+    ),
     "mobile"
   )
 ];
@@ -206,9 +221,7 @@ type TechIconProps = {
   iconElement: ReactElement;
 };
 
-const TechIcon = ({ iconElement }: ReactElement) => {
-  return iconElement;
-};
+const TechIcon = ({ iconElement }: TechIconProps) => iconElement;
 
 type TechCardProps = {
   key: string;
@@ -219,27 +232,20 @@ const technologyCardStyle = {
   height: 100,
   marginTop: 10,
   marginRight: 10,
-  marginLeft: 10,
-  justifyContent: "center"
+  marginLeft: 10
 };
 
 const TechnologyCard = ({ key, technology }: TechCardProps) => {
   return (
-    <div className="techCard" style={technologyCardStyle}>
-      <a href={technology.websiteUrl}>
-        <TechIcon iconElement={technology.imageUrl} />
-        <br />
-        <span
-          style={{
-            fontFamily: "Varela Round",
-            color: "white",
-            textAlign: "center"
-          }}
-        >
-          {technology.name}
-        </span>
-      </a>
-    </div>
+    <Col style={{ padding: "30px" }}>
+      <div className="techCard" style={technologyCardStyle}>
+        <a href={technology.websiteUrl}>
+          <TechIcon iconElement={technology.imageUrl} />
+          <br />
+          <span className="techName" style={{ color: "white" }}>{technology.name}</span>
+        </a>
+      </div>
+    </Col>
   );
 };
 
@@ -258,10 +264,10 @@ const Technologies = ({ techType, heading }: TechnologiesPros) => {
   return (
     <div
       className="technologies"
-      style={{ marginTop: 100, justifyContent: "center" }}
+      style={{ justifyContent: "center" }}
     >
       <span style={techHeadingStyle}>{heading}</span>
-      <Row style={{ justifyContent: "space-between" }}>
+      <Row>
         {technologies.map(technology => {
           if (technology.techType === techType)
             return (

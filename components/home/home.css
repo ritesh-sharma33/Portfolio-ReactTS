@@ -1,0 +1,18 @@
+
+a:hover {
+  text-decoration: none;
+}
+
+.techName {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: all .3s;
+    color: "white"
+}
