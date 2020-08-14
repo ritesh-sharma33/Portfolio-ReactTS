@@ -237,7 +237,7 @@ const technologyCardStyle = {
 
 const TechnologyCard = ({ key, technology }: TechCardProps) => {
   return (
-    <Col style={{ padding: "30px" }}>
+    <Col className="techCardColumn">
       <div className="techCard" style={technologyCardStyle}>
         <a href={technology.websiteUrl}>
           <TechIcon iconElement={technology.imageUrl} />

@@ -81,13 +81,27 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
   img.myImage { width: 95%; height: 40% }
-  
+  .techCardColumn {
+    padding: 10px;
+  }
+  .scroller {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   img.myImage { width: 95%; height: 50% }
+  .techCardColumn {
+    padding: 10px;
+  }
+  .scroller {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   img.myImage { width: 95%; height: 40%; }
+  .techCardColumn {
+    padding: 30px
+  }
 }
