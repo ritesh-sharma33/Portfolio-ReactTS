@@ -50,6 +50,15 @@ const Hero = () => {
                   src="https://user-images.githubusercontent.com/45563022/89817007-1d6bb800-db65-11ea-8ee9-ac76704ddb99.png"
                   alt="Ritesh Sharma"
                 />
+                <svg style={{ marginTop: "50%" }}>
+                  <path
+                    fill="none"
+                    stroke="deeppink"
+                    stroke-width="14"
+                    stroke-miterlimit="0"
+                    d="M50 250 Q100 350 200 350 L300 350 L400 350 L500 350 L600 350 L700 350"
+                  />
+                </svg>
               </div>
             </Col>
 
@@ -91,6 +100,44 @@ const Hero = () => {
                 <Typist.Backspace count={13} delay={300} />
                 <span style={descriptionText}>A Software Developer</span>
               </Typist>
+              <div className="socialHandleSection">
+                <a href="https://www.facebook.com/sharmaritesh3312/">
+                  <img
+                    className="socialHandleIcon"
+                    src="https://user-images.githubusercontent.com/45563022/90330017-48bc3000-dfc7-11ea-8171-bdac7c7f2ba3.png"
+                  />
+                </a>
+                <a href="https://github.com/ritesh-sharma33">
+                  <img
+                    className="socialHandleIcon"
+                    src="https://user-images.githubusercontent.com/45563022/90330053-89b44480-dfc7-11ea-8f97-b0f1f45761bd.png"
+                  />
+                </a>
+                <a href="https://twitter.com/sharma_ritesh33">
+                  <img
+                    className="socialHandleIcon"
+                    src="https://user-images.githubusercontent.com/45563022/90330082-cbdd8600-dfc7-11ea-998d-d3ebfeb3728c.png"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/sharmaritesh33/">
+                  <img
+                    className="socialHandleIcon"
+                    src="https://user-images.githubusercontent.com/45563022/90330101-edd70880-dfc7-11ea-9a1b-ed15bd2b52f4.png"
+                  />
+                </a>
+                <a href="https://medium.com/@sharmaritesh3312">
+                  <img
+                    className="socialHandleIcon"
+                    src="https://user-images.githubusercontent.com/45563022/90330143-1bbc4d00-dfc8-11ea-8aab-39f0e04f7e91.png"
+                  />
+                </a>
+                <a href="https://www.youtube.com/channel/UCULHutsJDu3AayYWPZD8f9g">
+                  <img
+                    className="socialHandleIcon"
+                    src="https://user-images.githubusercontent.com/45563022/90330161-4d351880-dfc8-11ea-93a3-72f45d58dcdb.png"
+                  />
+                </a>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -121,6 +168,9 @@ const Hero = () => {
               heading={"Mobile App Development"}
               techType={"mobile"}
             />
+          </Row>
+          <Row data-aos="fade-left" className="technologies">
+            <Technologies heading={"Others"} techType={"misc"} />
           </Row>
         </Container>
       </section>

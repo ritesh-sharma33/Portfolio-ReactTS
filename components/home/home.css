@@ -1,6 +1,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 a:hover {
   text-decoration: none;
@@ -101,4 +102,15 @@ a:hover {
   .techCardColumn {
     padding: 30px
   }
+}
+
+.socialHandleSection {
+  margin-top: 35%;
+}
+
+.socialHandleIcon {
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
