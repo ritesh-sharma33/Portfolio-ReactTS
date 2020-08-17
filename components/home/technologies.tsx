@@ -39,12 +39,6 @@ const TechnologyCard = ({ key, technology }: TechCardProps) => {
   );
 };
 
-const techHeadingStyle = {
-  fontSize: 30,
-  fontFamily: "Varela Round",
-  fontWeight: "bold"
-};
-
 type TechnologiesPros = {
   techType: string;
   heading: string;
@@ -53,13 +47,15 @@ type TechnologiesPros = {
 const Technologies = ({ techType, heading }: TechnologiesPros) => {
   return (
     <div className="technologies" style={{ justifyContent: "center" }}>
-      <span style={techHeadingStyle}>{heading}</span>
+      <span className="techHeading">{heading}</span>
       <Row>
         {technologies.map(technology => {
           if (technology.techType === techType)
             return (
               <TechnologyCard key={technology.name} technology={technology} />
             );
+
+            return <div></div>
         })}
       </Row>
     </div>
