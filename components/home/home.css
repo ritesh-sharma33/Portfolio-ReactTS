@@ -8,19 +8,6 @@ a:hover {
   text-decoration: none;
 }
 
-.techName {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-50%);
-    text-transform: capitalize;
-    transition: all .3s;
-    color: "white"
-}
-
 .hero-screen-full {
   display: flex;
   flex-direction: column;
@@ -143,6 +130,10 @@ a:hover {
     font-size: 9vw;
     padding: 0px;
   }
+  .techName {
+    font-size: 3vw;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -226,4 +217,9 @@ a:hover {
 .techHeading {
   font-family: "Varela Round";
   font-weight: bold;
+}
+
+.techName {
+  color: white;
+  visibility: hidden;
 }

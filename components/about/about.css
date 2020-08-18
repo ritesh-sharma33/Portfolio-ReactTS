@@ -1,0 +1,74 @@
+
+.aboutPage {
+  background-color: #212121;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+  .aboutPageHeroRow {
+    height: 0vh;
+  }
+  .programmingSvgElement {
+    margin-top: 4vh;
+    height: 42vh;
+    width: 90%;
+    margin-left: 3vw;
+    padding: 0;
+    margin-bottom: 7vh;
+  }
+  .heroIntroText {
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5vw;
+  }
+  .ideSection {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+/* For big screens */
+@media only screen and (min-width: 992px) {
+  .aboutPageHeroRow {
+    height: 100vh;
+  }
+
+  .programmingSvgElement {
+    height: 50vh;
+    width: 90%;
+    margin-top: 7vh;
+    margin-left: 2vw;
+  }
+  .heroIntroText {
+    color: white;
+    font-family: 'Fira Code', monospace;
+  }
+  .introSection {
+    margin-top: 20vh;
+    margin-left: 10vw;
+  }
+}
+
+.classname {
+  color: #E06C6D;
+}
+
+.variablename {
+  color: #E5BE77;
+}
+
+.keyword {
+  color: #B778DD;
+}
+
+.methodname {
+  color: #3BA9C2;
+}
+
+.stringliteral {
+  color: #69B779;
+}
+
+.numberliteral {
+  color: #D19A5E
+}

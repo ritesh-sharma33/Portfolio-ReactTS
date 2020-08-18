@@ -25,7 +25,6 @@ const Hero = () => {
       <div className="hero-screen-full">
         <Container>
           <Row className="heroRow">
-            <div />
             <Col data-aos="fade-right" lg={6} xs={12} sm={12}>
               <div className="photoSection">
                 <img

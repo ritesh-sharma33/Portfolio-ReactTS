@@ -4,7 +4,6 @@ import "./home.css";
 import { technologies } from "./data";
 import Technology from "./Technology";
 
-
 type TechIconProps = {
   iconElement: ReactElement;
 };
@@ -14,6 +13,7 @@ const TechIcon = ({ iconElement }: TechIconProps) => iconElement;
 type TechCardProps = {
   key: string;
   technology: Technology;
+  name: string;
 };
 
 const technologyCardStyle = {
@@ -23,15 +23,15 @@ const technologyCardStyle = {
   marginLeft: 10
 };
 
-const TechnologyCard = ({ key, technology }: TechCardProps) => {
+const TechnologyCard = ({ name, key, technology }: TechCardProps) => {
   return (
     <Col className="techCardColumn">
       <div className="techCard" style={technologyCardStyle}>
         <a href={technology.websiteUrl}>
           <TechIcon iconElement={technology.imageUrl} />
           <br />
-          <span className="techName" style={{ color: "white" }}>
-            {key}
+          <span className="techName">
+            {name}
           </span>
         </a>
       </div>
@@ -52,7 +52,7 @@ const Technologies = ({ techType, heading }: TechnologiesPros) => {
         {technologies.map(technology => {
           if (technology.techType === techType)
             return (
-              <TechnologyCard key={technology.name} technology={technology} />
+              <TechnologyCard name={technology.name} key={technology.name} technology={technology} />
             );
 
             return <div></div>
