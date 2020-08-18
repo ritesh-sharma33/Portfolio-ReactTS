@@ -135,6 +135,14 @@ a:hover {
     font-size: 5vw;
     text-align: left;
   }
+  .firebaseIcon {
+    height: 9vw;
+    width: 6vw;
+  }
+  .deviconIcon {
+    font-size: 9vw;
+    padding: 0px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -176,6 +184,16 @@ a:hover {
   }
   #socialMediaAtBottom {
     visibility: hidden;
+  }
+  .firebaseIcon {
+    height: 60px;
+    width: 45px;
+  }
+  .deviconIcon {
+    font-size: 40px;
+  }
+  .techHeading {
+    font-size: 24px;
   }
 }
 

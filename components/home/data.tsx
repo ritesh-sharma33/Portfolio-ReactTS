@@ -77,7 +77,7 @@ export const technologies = [
     "TypeScript",
     "",
     (
-      <span style={{ fontSize: 40 }}>
+      <span className="deviconIcon">
         <i className="devicon-typescript-plain colored" />
       </span>
     ),
@@ -325,7 +325,7 @@ export const technologies = [
     "",
     (
       <img
-        className="svgTechIcon"
+        className="firebaseIcon"
         src="https://user-images.githubusercontent.com/45563022/90328942-3a1d4b00-dfbe-11ea-8845-90fdbd40c596.png"
       />
     ),
