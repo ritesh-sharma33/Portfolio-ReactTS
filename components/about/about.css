@@ -109,3 +109,9 @@ html {
   color: white;
   font-family: "Varela Round";
 }
+
+.educationCard {
+  width: 70%;
+  background-color: #3C3C3C;
+  margin: auto;
+}

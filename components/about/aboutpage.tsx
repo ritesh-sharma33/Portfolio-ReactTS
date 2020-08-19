@@ -15,6 +15,8 @@ import {
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Typist from "react-typist";
 
+import EducationCard from "./EducationCard.tsx";
+
 const getRandomSvgElement = () => {
   const arrayOfSvgElements = [
     programmingSvgElement,
@@ -158,6 +160,7 @@ const AboutPage = () => {
       </div>
       <section id="#educationalBackground">
         <span className="sectionHeadingText">Educational Background</span>
+        <EducationCard title="10th" school="Deshbandhu H.S. Eng. Med. School" grade={81.33} passYear={2015} />
       </section>
     </div>
   );
