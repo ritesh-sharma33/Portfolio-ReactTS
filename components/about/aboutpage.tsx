@@ -10,12 +10,15 @@ import {
   codingSvgElement,
   freelancerSvgElement,
   webDeveloperSvgElement,
-  javascriptFrameworkSvgElement
+  javascriptFrameworkSvgElement,
+  educationIllustration,
+  professionalIllustration
 } from "./svgelements.tsx";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Typist from "react-typist";
 
-import EducationCard from "./EducationCard.tsx";
+import EducationCard from "./EducationCard";
+import ProfessionalCard from "./ProfessionalCard";
 
 const getRandomSvgElement = () => {
   const arrayOfSvgElements = [
@@ -158,9 +161,70 @@ const AboutPage = () => {
           </section>
         </Container>
       </div>
-      <section id="#educationalBackground">
-        <span className="sectionHeadingText">Educational Background</span>
-        <EducationCard title="10th" school="Deshbandhu H.S. Eng. Med. School" grade={81.33} passYear={2015} />
+      <section id="educationalBackground">
+        <Row>
+          <Col lg={6} xs={12} sm={12}>
+            <div className="sectionHeadingContainer">
+              <span className="sectionHeadingText">Educational Background</span>
+            </div>
+            <div className="eduSectionContainer">
+              <div className="node">
+                <EducationCard
+                  title={"10th Grade"}
+                  grade={"81.33%"}
+                  passYear={2015}
+                  school={"Deshbandhu H.S. (Eng. Med.) School"}
+                />
+              </div>
+              <div className="node">
+                <EducationCard
+                  title={"12th Grade"}
+                  grade={"87%"}
+                  passYear={2017}
+                  school={"Deshbandhu H.S. (Eng. Med.) School"}
+                />
+              </div>
+              <div className="node">
+                <EducationCard
+                  title={"B.Tech."}
+                  grade={"9.44 CGPA"}
+                  passYear={2021}
+                  school={"KIIT Deemed to be University, Bhubaneswar, India"}
+                />
+              </div>
+            </div>
+          </Col>
+
+          <Col className="eduBackColumn" lg={6} xs={12} sm={12}>
+            <div className="educationIllustration">{educationIllustration}</div>
+          </Col>
+        </Row>
+      </section>
+      <section id="professionalExperience">
+        <Row>
+          <Col className="proColumn" lg={6} xs={12} sm={12}>
+            <div className="professionalIllustration">{professionalIllustration}</div>
+          </Col>
+          <Col lg={6} xs={12} sm={12}>
+            <div className="sectionHeadingContainer">
+              <span className="sectionHeadingText">Experience</span>
+            </div>
+            <div className="eduSectionContainer">
+              <div className="node">
+                <ProfessionalCard title="Developer Intern" company="LocalWire - A Hyperlocal News Platform" timeframe="May 2019 - June 2019" description="Mobile App Development" />
+              </div>
+              <div className="node">
+                <ProfessionalCard title="Full Stack Developer" company="LocalWire - A Hyperlocal News Platform" timeframe="July 2019 - January 2020" description="Full Stack Development" />
+              </div>
+              <div className="node">
+                <ProfessionalCard title="Full Stack Developer" company="Mozilla Club BBSR" timeframe="August 2019 - Present" description="Core member" />
+              </div>
+              <div className="node">
+                <ProfessionalCard title="Summer Intern" company="HighRadius Corporation" timeframe="April 2020 - June 2020" description="Trainee-cum-Intern" />
+              </div>
+            </div>
+          </Col>
+        </Row>
       </section>
     </div>
   );
