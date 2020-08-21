@@ -49,13 +49,14 @@ const Hero = () => {
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; مرحبا
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; salut &nbsp; 👋
               </span>
+              <br /><br />
               <Typist
                 cursor={{ hideWhenDone: true }}
                 avgTypingDelay={30}
                 stdTypingDelay={20}
               >
                 <span className="nameText">I'm Ritesh Sharma</span>
-                <br />
+                <br /><br />
                 <Typist.Delay ms={500} />
                 <span className="descriptionText">A Software Developer</span>
                 <Typist.Backspace count={18} delay={300} />

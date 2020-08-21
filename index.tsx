@@ -43,7 +43,7 @@ class App extends Component<AppProps, AppState> {
             <Route path="/blogs">
               <BlogsPage />
             </Route>
-            <Route>
+            <Route path="/contact">
               <ContactPage />
             </Route>
           </Switch>
