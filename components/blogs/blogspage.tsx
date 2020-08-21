@@ -89,7 +89,7 @@ class BlogsPage extends React.Component<any, any> {
         <div className="blogsListSection">
           {blogs.length === 0 ? (
             <div style={{ marginTop: "30vh", textAlign: "center" }}>
-              <Spinner animation="grow" variant="danger" size={40} />
+              <Spinner animation="grow" variant="danger" />
             </div>
             
           ) : (
