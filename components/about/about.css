@@ -163,6 +163,10 @@ html {
   #professionalExperience {
     height: 100vh;
   }
+
+  .professionalIllustration {
+    margin-top: 10%;
+  }
 }
 
 .classname {
