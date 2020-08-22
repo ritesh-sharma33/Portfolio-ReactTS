@@ -153,11 +153,9 @@ const AboutPage = () => {
         </Container>
         <Container className="scroller">
           <section id="technologiesSection">
-            <a href="#educationalBackground">
-              <span />
-              <span />
-              <span />
-            </a>
+            <span />
+            <span />
+            <span />
           </section>
         </Container>
       </div>
@@ -203,7 +201,9 @@ const AboutPage = () => {
       <section id="professionalExperience">
         <Row>
           <Col className="proColumn" lg={6} xs={12} sm={12}>
-            <div className="professionalIllustration">{professionalIllustration}</div>
+            <div className="professionalIllustration">
+              {professionalIllustration}
+            </div>
           </Col>
           <Col lg={6} xs={12} sm={12}>
             <div className="sectionHeadingContainer">
@@ -211,16 +211,36 @@ const AboutPage = () => {
             </div>
             <div className="eduSectionContainer">
               <div className="node">
-                <ProfessionalCard title="Developer Intern" company="LocalWire - A Hyperlocal News Platform" timeframe="May 2019 - June 2019" description="Mobile App Development" />
+                <ProfessionalCard
+                  title="Developer Intern"
+                  company="LocalWire - A Hyperlocal News Platform"
+                  timeframe="May 2019 - June 2019"
+                  description="Mobile App Development"
+                />
               </div>
               <div className="node">
-                <ProfessionalCard title="Full Stack Developer" company="LocalWire - A Hyperlocal News Platform" timeframe="July 2019 - January 2020" description="Full Stack Development" />
+                <ProfessionalCard
+                  title="Full Stack Developer"
+                  company="LocalWire - A Hyperlocal News Platform"
+                  timeframe="July 2019 - January 2020"
+                  description="Full Stack Development"
+                />
               </div>
               <div className="node">
-                <ProfessionalCard title="Full Stack Developer" company="Mozilla Club BBSR" timeframe="August 2019 - Present" description="Core member" />
+                <ProfessionalCard
+                  title="Full Stack Developer"
+                  company="Mozilla Club BBSR"
+                  timeframe="August 2019 - Present"
+                  description="Core member"
+                />
               </div>
               <div className="node">
-                <ProfessionalCard title="Summer Intern" company="HighRadius Corporation" timeframe="April 2020 - June 2020" description="Trainee-cum-Intern" />
+                <ProfessionalCard
+                  title="Summer Intern"
+                  company="HighRadius Corporation"
+                  timeframe="April 2020 - June 2020"
+                  description="Trainee-cum-Intern"
+                />
               </div>
             </div>
           </Col>
