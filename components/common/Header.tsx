@@ -20,10 +20,9 @@ export default ({}) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <a><Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/' exact>Home</Nav.Link></a>
-            <Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/about'>About</Nav.Link>
-            <Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/blogs'>Blogs</Nav.Link>
-            <Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/contact'>Contact</Nav.Link>
+            <Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/' exact><span className="navlinkText">Home</span></Nav.Link>
+            <Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/about'><span className="navlinkText">About</span></Nav.Link>
+            <Nav.Link className="navlink" style={navLinkStyle} as={NavLink} to='/blogs'><span className="navlinkText">Blogs</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
