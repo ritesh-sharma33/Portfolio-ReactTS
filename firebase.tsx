@@ -1,6 +1,7 @@
 
 import firebase from 'firebase';
 import config from "./config";
+import 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: config.apiKey,
@@ -13,6 +14,10 @@ const firebaseConfig = {
     measurementId: config.measurementId
 };
 
-firebase.initializeApp(firebaseConfig);
+try {
+  firebase.initializeApp(firebaseConfig);
+} catch(e) {
+  console.error("Something went wrong: " + e.stack);
+}
 
 export default firebase;

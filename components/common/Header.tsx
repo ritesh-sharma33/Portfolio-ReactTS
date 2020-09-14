@@ -15,7 +15,7 @@ const navLinkStyle = {
 export default ({}) => {
   return (
     <div className="headerSection" style={{ backgroundColor: "#212121" }}>
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="sm">
         <Navbar.Brand href="#home"><img height="80" width="220" src="https://user-images.githubusercontent.com/45563022/89736314-2b96d700-da86-11ea-9fe9-06c416034218.gif" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

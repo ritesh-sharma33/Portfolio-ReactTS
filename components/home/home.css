@@ -101,6 +101,7 @@ a:hover {
     font-size: 5vw;
   }
   .techHeading {
+    margin-top: 15px;
     font-size: 5vw;
   }
   .svgTechIcon {
@@ -134,7 +135,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  img.myImage { width: 55%; height: 50%; margin-top: 10px }
+  img.myImage { width: 30vw; height: 30vw; margin-top: 10px }
   .techCardColumn {
     padding: 10px;
   }
@@ -146,12 +147,34 @@ a:hover {
   }
   .nameText {
     font-size: 45px;
+    line-height: 1;
   }
   .descriptionText {
     font-size: 30px;
   }
   #socialMediaAtBottom {
     visibility: hidden;
+  }
+  #techSection {
+    margin-top: 100vh;
+  }
+  .firebaseIcon {
+    height: 60px;
+    width: 45px;
+  }
+  .techHeading {
+    font-size: 24px;
+  }
+  .svgTechIcon {
+    height: 60px;
+    width: 60px;
+  }
+  .deviconIcon {
+    font-size: 40px;
+  }
+  .technologies {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -183,6 +206,9 @@ a:hover {
   .techHeading {
     font-size: 24px;
   }
+  #techSection {
+    margin-top: 0;
+  }
 }
 
 .socialHandleSection {
@@ -194,6 +220,7 @@ a:hover {
   width: 50px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .descriptionText {

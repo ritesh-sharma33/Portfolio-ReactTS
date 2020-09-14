@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="hero-screen-full">
         <Container>
           <Row className="heroRow">
-            <Col data-aos="fade-right" lg={6} xs={12} sm={12}>
+            <Col data-aos="fade-right" lg={6} xs={12} sm={6}>
               <div className="photoSection">
                 <img
                   className="myImage"
@@ -39,7 +39,7 @@ const Hero = () => {
               data-aos="fade-left"
               lg={6}
               xs={12}
-              sm={12}
+              sm={6}
               className="nameColumn"
             >
               <span className="helloText">

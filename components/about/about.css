@@ -116,7 +116,7 @@ html {
   }
 
   .programmingSvgElement {
-    height: 50vh;
+    height: 40vh;
     width: 90%;
     margin-top: 7vh;
     margin-left: 2vw;
@@ -166,6 +166,27 @@ html {
 
   .professionalIllustration {
     margin-top: 10%;
+  }
+}
+
+/* For mid-screens */
+@media only screen and (min-width: 600px) {
+  .programmingSvgElement {
+    height: 70%;
+    width: 90%;
+  }
+
+  .heroIntroText {
+    color: white;
+    font-family: 'fira code';
+  }
+
+  .aboutPageHeroRow {
+    height: 100vh;
+  }
+
+  .ideSection {
+    margin-top: 20vh;
   }
 }
 

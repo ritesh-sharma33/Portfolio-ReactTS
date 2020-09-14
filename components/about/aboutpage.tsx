@@ -55,10 +55,10 @@ const AboutPage = () => {
       <div className="aboutPageHero">
         <Container>
           <Row className="aboutPageHeroRow">
-            <Col data-aos="fade-right" lg={4} xs={12} sm={12}>
+            <Col data-aos="fade-right" lg={4} xs={12} sm={5}>
               {getRandomSvgElement()}
             </Col>
-            <Col data-aos="fade-left" lg={8} xs={12} sm={12}>
+            <Col data-aos="fade-left" lg={8} xs={12} sm={7}>
               {ideVisible ? (
                 <div className="ideSection" id="sectionForIde">
                   <Typist
