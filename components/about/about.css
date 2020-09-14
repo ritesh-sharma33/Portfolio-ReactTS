@@ -55,10 +55,12 @@ html {
   }
   .educationIllustration {
     visibility: hidden;
+    height: 0;
   }
 
   .professionalIllustration {
     visibility: hidden;
+    height: 0;
   }
 
   #educationalBackground {
@@ -228,9 +230,7 @@ html {
 
 .eduSectionContainer {
   margin-left: 8vw;
-  border-left: 3px solid #ddd;
   margin-top: 50px;
-
 }
 .node {
   position: relative;
