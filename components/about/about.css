@@ -15,11 +15,11 @@ html {
   }
   .programmingSvgElement {
     margin-top: 4vh;
-    height: 42vh;
+    height: 30vh;
     width: 90%;
     margin-left: 3vw;
     padding: 0;
-    margin-bottom: 7vh;
+    margin-bottom: 9vh;
   }
   .heroIntroText {
     color: white;

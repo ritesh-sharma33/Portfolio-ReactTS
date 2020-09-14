@@ -283,7 +283,7 @@ const AboutPage = () => {
                 <br />
                 <span className="eduCardText">Description: Trainee-cum-Intern</span>
                 <br />
-                <span className="eduCardText">Timespan: Apr 2020 - June 20</span>
+                <span className="eduCardText">Timespan: Apr 2020 - June 2020</span>
                 <br />
               </Timeline.Item>
             </div>
