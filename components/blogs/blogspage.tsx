@@ -14,7 +14,7 @@ class BlogsPage extends React.Component<any, any> {
     super(props);
     this.ref = db
       .collection("blogs")
-      .orderBy("articleNo", "asc");
+      .orderBy("articleNo", "des");
     this.unsubscribe = null;
 
     this.state = {
