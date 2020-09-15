@@ -1,7 +1,8 @@
 
-import firebase from 'firebase';
+import * as firebase from 'firebase';
+import 'firebase/firebase-app';
 import config from "./config";
-import 'firebase/firestore';
+import "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: config.apiKey,
@@ -15,9 +16,11 @@ const firebaseConfig = {
 };
 
 try {
-  firebase.initializeApp(firebaseConfig);
+  var app = firebase.initializeApp(firebaseConfig);
 } catch(e) {
   console.error("Something went wrong: " + e.stack);
 }
 
-export default firebase;
+var db = firebase.firestore();
+
+export { db };
